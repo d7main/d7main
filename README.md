@@ -1,4 +1,4 @@
-<h1 align="center">Hi 👋, I'm Demian </h1>
+<h1 align="center">Hi 👋, I'm d7main</h1>
 <h3 align="center">.NET Desktop Developer | Embedded / IoT Enthusiast</h3>
 
 <p align="center">
@@ -9,15 +9,17 @@
 
 ### 🧑‍💻 About Me
 - 💻 .NET Desktop Developer (WPF, WinForms)
-- 🔌 Embedded / IoT: Arduino, ESP32 / ESP8266
-- 🧠 Interested in: hardware integration, device communication, automation
-- 📍 Location: Czech Republic
+- 🔌 Embedded & IoT developer (Arduino, ESP32 / ESP8266)
+- ⚙️ Interested in hardware integration, automation, device communication
+- 📍 Czech Republic
+
 
 ---
 
 ### 🛠 Tech Stack
 
 <p align="left">
+  <img src="https://img.shields.io/badge/C-00599C?logo=c&logoColor=white" />
   <img src="https://img.shields.io/badge/C%23-239120?logo=c-sharp&logoColor=white" />
   <img src="https://img.shields.io/badge/.NET-512BD4?logo=dotnet&logoColor=white" />
   <img src="https://img.shields.io/badge/WPF-512BD4?logo=windows&logoColor=white" />
@@ -29,6 +31,7 @@
 </p>
 
 ---
+
 
 
 
