@@ -1,5 +1,27 @@
-## Hi there 👋
+## Hi , I'm Demian 👋
 
+
+
+## About me 
+  -Student 
+
+## Tech Stack
+**Languages:**
+- C / C++ (Embedded)
+- C#
+
+**Desktop:**
+- WPF
+- WinForms
+
+**Embedded / IoT:**
+-Arduino
+-ESP32 / ESP8266
+  
+**Tools & Platforms:**
+- .NET
+- Git
+- Entity Framework
 <!--
 **d7main/d7main** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
