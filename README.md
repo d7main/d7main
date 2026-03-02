@@ -3,7 +3,7 @@
 
 
 ## About me 
-  -Student 
+  -Student FM TUL 
 
 ## Tech Stack
 **Languages:**
@@ -15,8 +15,8 @@
 - WinForms
 
 **Embedded / IoT:**
--Arduino
--ESP32 / ESP8266
+- Arduino
+- ESP32 / ESP8266
   
 **Tools & Platforms:**
 - .NET
