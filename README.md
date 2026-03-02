@@ -28,6 +28,7 @@
   <img src="https://img.shields.io/badge/ESP32-000000?logo=espressif&logoColor=white" />
   <img src="https://img.shields.io/badge/SQL%20Server-CC2927?logo=microsoft-sql-server&logoColor=white" />
   <img src="https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white" />
+  <img src="https://img.shields.io/badge/MATLAB-0076A8?logo=mathworks&logoColor=white" />
 </p>
 
 ---
