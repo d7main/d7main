@@ -18,18 +18,29 @@
 
 ### 🛠 Tech Stack
 
+**Languages:**
 <p align="left">
   <img src="https://img.shields.io/badge/C-00599C?logo=c&logoColor=white" />
   <img src="https://img.shields.io/badge/C%23-239120?logo=c-sharp&logoColor=white" />
-  <img src="https://img.shields.io/badge/.NET-512BD4?logo=dotnet&logoColor=white" />
-  <img src="https://img.shields.io/badge/WPF-512BD4?logo=windows&logoColor=white" />
-  <img src="https://img.shields.io/badge/WinForms-0078D6?logo=windows&logoColor=white" />
-  <img src="https://img.shields.io/badge/Arduino-00979D?logo=arduino&logoColor=white" />
-  <img src="https://img.shields.io/badge/ESP32-000000?logo=espressif&logoColor=white" />
-  <img src="https://img.shields.io/badge/SQL%20Server-CC2927?logo=microsoft-sql-server&logoColor=white" />
-  <img src="https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white" />
   <img src="https://img.shields.io/badge/MATLAB-0076A8?logo=mathworks&logoColor=white" />
 </p>
+**Dekstop**
+<p align="left">
+ <img src="https://img.shields.io/badge/.NET-512BD4?logo=dotnet&logoColor=white" />
+ <img src="https://img.shields.io/badge/WPF-512BD4?logo=windows&logoColor=white" />
+ <img src="https://img.shields.io/badge/WinForms-0078D6?logo=windows&logoColor=white" />
+</p>
+ **Embedded / IoT**
+ <p align="left">
+  <img src="https://img.shields.io/badge/ESP32-000000?logo=espressif&logoColor=white" />
+  <img src="https://img.shields.io/badge/Arduino-00979D?logo=arduino&logoColor=white" />
+</p>
+  **Tools**
+ <p align="left">
+  <img src="https://img.shields.io/badge/SQL%20Server-CC2927?logo=microsoft-sql-server&logoColor=white" />
+  <img src="https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white" />
+ </p>
+ 
 
 ---
 
