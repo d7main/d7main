@@ -8,10 +8,10 @@
 ---
 
 ### 🧑‍💻 About Me
-- 💻 .NET Desktop Developer (WPF, WinForms)
-- 🔌 Embedded & IoT developer (Arduino, ESP32 / ESP8266)
-- ⚙️ Interested in hardware integration, automation, device communication
-- 📍 Czech Republic
+- .NET Desktop Developer (WPF, WinForms)
+-  Embedded & IoT developer (Arduino, ESP32 / ESP8266)
+-  Interested in hardware integration, automation, device communication
+-  Czech Republic
 
 
 ---
