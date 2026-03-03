@@ -1,5 +1,5 @@
 <h1 align="center">Hi there, I'm d7main 👋</h1>
-<h3 align="center">IT / Engineering Student | .NET & IoT Developer</h3>
+<h3 align="center">Mechatronics Student | .NET & IoT Developer</h3>
 
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=d7main&label=Profile%20views&color=0e75b6&style=flat" alt="Profile Views" />
@@ -9,13 +9,13 @@
 
 ### 🧑‍💻 About Me
 
-I am a student based in the **Czech Republic** 🇨🇿 with a strong passion for software development and hardware integration. I am constantly learning, building projects, and exploring how to connect the digital and physical worlds.
+I'm a Mechatronics student from the **Czech Republic** 🇨🇿. I love building projects that connect software with real-world hardware.
 
-- 🎓 **Education:** Currently studying  Mechatronics.
-- 🖥️ **Software Development:** Focusing on building robust desktop applications using **.NET (C#, WPF, WinForms)**.
-- ⚙️ **Embedded & IoT:** Working with microcontrollers (**Arduino, ESP32, ESP8266**) to create smart, connected devices.
-- 🔌 **Interests:** Hardware-software integration, system automation, and device communication protocols.
-- 🌱 **Currently learning:**  Advanced C# concepts, RTOS, PCB design , CAD , CAE.
+- 🎓 **Education:** Studying Mechatronics.
+- 🖥️ **Software:** Building .NET desktop apps (C#, WPF, WinForms).
+- ⚙️ **Hardware:** Creating smart devices using ESP32, ESP8266 & Arduino.
+- 🔌 **Interests:** Automation, IoT, and hardware-software integration.
+- 🌱 **Currently learning:** Advanced C#, RTOS, PCB design, CAD/CAE.
 
 ---
 
@@ -41,6 +41,11 @@ I am a student based in the **Czech Republic** 🇨🇿 with a strong passion fo
   <img src="https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=arduino&logoColor=white" alt="Arduino" />
 </p>
 
+**CAD / 3D Modeling**
+<p align="left">
+  <img src="https://img.shields.io/badge/Fusion_360-F05A28?style=for-the-badge&logo=autodesk&logoColor=white" alt="Fusion 360" />
+</p>
+
 **Tools & Environment**
 <p align="left">
   <img src="https://img.shields.io/badge/SQL_Server-CC2927?style=for-the-badge&logo=microsoft-sql-server&logoColor=white" alt="SQL Server" />
@@ -49,13 +54,6 @@ I am a student based in the **Czech Republic** 🇨🇿 with a strong passion fo
 </p>
 
 ---
-
-### 📊 GitHub Activity
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=d7main&show_icons=true&theme=transparent&hide_border=true&title_color=0e75b6&icon_color=0e75b6" alt="d7main's GitHub stats" height="150" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=d7main&layout=compact&theme=transparent&hide_border=true&title_color=0e75b6" alt="Top Languages" height="150" />
-</p>
 
 
 <!--
