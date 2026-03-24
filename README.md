@@ -60,6 +60,20 @@ I'm a Mechatronics student from the **Czech Republic** 🇨🇿. I love building
   <a href="https://wakatime.com">
     <img src="https://github-readme-stats.vercel.app/api/wakatime?username=d7main&layout=compact&theme=radical" alt="WakaTime Stats" />
   </a>
-</p>
-
+</p
+  
+name: Waka Readme
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+jobs:
+  update-readme:
+    name: Update this repo's README
+    runs-on: ubuntu-latest
+    steps:
+      - uses: athul/waka-readme@master
+        with:
+          WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
+          TIME_RANGE: all_time
 ---
