@@ -60,10 +60,13 @@ I'm a Mechatronics student from the **Czech Republic** 🇨🇿. I love building
 **Weekly Development Breakdown**
 <p align="left">
   <a href="https://wakatime.com">
-    <img src="https://github-readme-stats.vercel.app/api/wakatime?username=d7main&layout=compact&theme=radical" alt="WakaTime Stats" />
+    <img src="https://github-readme-stats.vercel.app/api/wakatime?username=d7main&layout=compact&theme=radical&range=last_7_days" alt="WakaTime Stats Weekly" />
   </a>
 </p>
 
 **All Time Statistics**
-
----
+<p align="left">
+  <a href="https://wakatime.com">
+    <img src="https://github-readme-stats.vercel.app/api/wakatime?username=d7main&layout=compact&theme=radical&range=all_time" alt="WakaTime Stats All Time" />
+  </a>
+</p>
