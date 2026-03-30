@@ -39,34 +39,18 @@ I'm a Mechatronics student from the **Czech Republic** 🇨🇿. I love building
 <p align="left">
   <img src="https://img.shields.io/badge/ESP32-000000?style=for-the-badge&logo=espressif&logoColor=white" alt="ESP32" />
   <img src="https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=arduino&logoColor=white" alt="Arduino" />
-</p>
-
-**CAD / 3D Modeling**
-<p align="left">
   <img src="https://img.shields.io/badge/Fusion_360-F05A28?style=for-the-badge&logo=autodesk&logoColor=white" alt="Fusion 360" />
-</p>
-
-**Tools & Environment**
-<p align="left">
-  <img src="https://img.shields.io/badge/SQL_Server-CC2927?style=for-the-badge&logo=microsoft-sql-server&logoColor=white" alt="SQL Server" />
-  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
-  <img src="https://img.shields.io/badge/Visual_Studio-5C2D91?style=for-the-badge&logo=visual-studio&logoColor=white" alt="Visual Studio" />
 </p>
 
 ---
 
-### 📊 Coding Stats
+### 📊 Coding Activity
 
-**Weekly Development Breakdown**
-<p align="left">
-  <a href="https://wakatime.com">
-    <img src="https://github-readme-stats.vercel.app/api/wakatime?username=d7main&layout=compact&theme=radical&range=last_7_days" alt="WakaTime Stats Weekly" />
-  </a>
-</p>
+---
 
-**All Time Statistics**
+### 📈 GitHub Stats
+
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=d7main&show_icons=true&theme=radical&hide_border=true&count_private=true" alt="GitHub Stats" height="170" />
-  
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=d7main&layout=compact&theme=radical&hide_border=true" alt="Top Langs" height="170" />
 </p>
