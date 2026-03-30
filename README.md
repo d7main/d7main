@@ -65,8 +65,8 @@ I'm a Mechatronics student from the **Czech Republic** 🇨🇿. I love building
 </p>
 
 **All Time Statistics**
-<p align="left">
-  <a href="https://wakatime.com">
-    <img src="https://github-readme-stats.vercel.app/api/wakatime?username=d7main&layout=compact&theme=radical&range=all_time" alt="WakaTime Stats All Time" />
-  </a>
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=d7main&show_icons=true&theme=radical&hide_border=true&count_private=true" alt="GitHub Stats" height="170" />
+  
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=d7main&layout=compact&theme=radical&hide_border=true" alt="Top Langs" height="170" />
 </p>
