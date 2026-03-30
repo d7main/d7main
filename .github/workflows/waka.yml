@@ -1,0 +1,26 @@
+name: Waka Readme
+
+on:
+  schedule:
+    # Запуск кожні 6 годин
+    - cron: '0 */6 * * *'
+  workflow_dispatch: # Дозволяє запустити вручну кнопкою
+
+jobs:
+  update-readme:
+    name: Update Waka Stats
+    runs-on: ubuntu-latest
+    steps:
+      - uses: athul/waka-readme-stats@master
+        with:
+          WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
+          # Це посилання каже роботу йти в Wakapi замість звичайного WakaTime
+          API_BASE_URL: https://wakapi.dev/api/compat/wakatime/v1
+          SHOW_TITLE: true
+          SECTION_NAME: waka
+          BLOCKS: █▓▒░
+          TIME_RANGE: all_time
+          SHOW_TIME: true
+          SHOW_TOTAL: true
+          SHOW_MASKED_TIME: true
+          LANG_COUNT: 10
