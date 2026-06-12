@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demian Zaiats — d7main</title>
+    <meta name="description" content="Mechatronics Engineer. Embedded Systems, Industrial Automation, .NET. Technical portfolio of Demian Zaiats.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        /* ============================================================
+           DESIGN SYSTEM — Variables
+        ============================================================ */
+        :root {
+            --bg:          #000000;
+            --text:        #ffffff;
+            --muted:       #555555;
+            --dim:         #333333;
+            --accent:      #ff7a18;
+            --rule:        #111111;
+
+            --sans: 'Inter', -apple-system, sans-serif;
+            --mono: 'JetBrains Mono', 'Courier New', monospace;
+
+            --space-xs:  8px;
+            --space-sm:  16px;
+            --space-md:  32px;
+            --space-lg:  64px;
+            --space-xl:  96px;
+        }
+
+        /* ============================================================
+           RESET
+        ============================================================ */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            font-size: 16px;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: var(--bg);
+            color: #e0e0e0;
+            font-family: var(--sans);
+            font-size: 1rem;
+            line-height: 1.7;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: var(--accent);
+        }
+
+        /* ============================================================
+           ROOT GRID — Desktop: sidebar + content | Mobile: single col
+        ============================================================ */
+        .root-grid {
+            display: grid;
+            grid-template-columns: 240px 1fr;
+            grid-template-rows: auto;
+            min-height: 100vh;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 var(--space-md);
+        }
+
+        /* ============================================================
+           SIDEBAR
+        ============================================================ */
+        .sidebar {
+            position: sticky;
+            top: 0;
+            height: 100vh;
+            padding: var(--space-lg) 0;
+            padding-right: var(--space-md);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border-right: 1px solid var(--rule);
+        }
+
+        /* Logo */
+        .logo {
+            color: #ffffff;
+            font-family: var(--sans);
+            font-size: 1.75rem;
+            font-weight: 800;
+            letter-spacing: -2px;
+            line-height: 1;
+            margin-bottom: var(--space-lg);
+        }
+
+        .logo .accent { color: var(--accent); }
+
+        /* Profile block */
+        .profile-name {
+            color: #ffffff;
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        .profile-meta {
+            font-size: 0.78rem;
+            color: var(--muted);
+            line-height: 1.6;
+            margin-bottom: var(--space-md);
+        }
+
+        /* Nav links */
+        .sidebar-nav {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+            margin-bottom: var(--space-lg);
+        }
+
+        .sidebar-nav a {
+            display: block;
+            padding: 6px 0;
+            font-size: 0.82rem;
+            font-weight: 500;
+            color: var(--muted);
+            transition: color 0.15s;
+        }
+
+        .sidebar-nav a:hover,
+        .sidebar-nav a.active {
+            color: var(--text);
+        }
+
+        .sidebar-nav a.active::before {
+            content: '— ';
+            color: var(--accent);
+        }
+
+        /* Contacts */
+        .sidebar-contacts {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-sm);
+        }
+
+        .contact-item {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+
+        .contact-label {
+            font-family: var(--mono);
+            font-size: 0.62rem;
+            color: var(--muted);
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+        }
+
+        .contact-val {
+            font-size: 0.78rem;
+            font-weight: 500;
+            word-break: break-all;
+        }
+
+        /* Language switcher */
+        .lang-switcher {
+            display: flex;
+            align-items: center;
+            gap: var(--space-xs);
+            margin-top: var(--space-sm);
+        }
+
+        .lang-btn {
+            background: none;
+            border: none;
+            font-family: var(--mono);
+            font-size: 0.72rem;
+            font-weight: 700;
+            color: var(--muted);
+            cursor: pointer;
+            padding: 0;
+            letter-spacing: 0.05em;
+            transition: color 0.15s;
+        }
+
+        .lang-btn:hover { color: var(--text); }
+        .lang-btn.active { color: var(--accent); }
+
+        .lang-sep {
+            color: var(--dim);
+            font-size: 0.65rem;
+            user-select: none;
+        }
+
+        /* Uptime */
+        .uptime {
+            margin-top: var(--space-md);
+            font-family: var(--mono);
+            font-size: 0.68rem;
+            color: var(--muted);
+        }
+
+        .uptime-value {
+            color: var(--dim);
+        }
+
+        /* ============================================================
+           MAIN CONTENT
+        ============================================================ */
+        .content {
+            padding: var(--space-lg) 0 var(--space-xl) var(--space-lg);
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-xl);
+        }
+
+        /* ============================================================
+           SECTION ANATOMY
+        ============================================================ */
+        .section { scroll-margin-top: 40px; }
+
+        .section-eyebrow {
+            font-family: var(--mono);
+            font-size: 0.68rem;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: var(--space-sm);
+        }
+
+        .section-title {
+            color: #ffffff;
+            font-size: 1.55rem;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            margin-bottom: var(--space-md);
+        }
+
+        .section-divider {
+            width: 32px;
+            height: 1px;
+            background: var(--accent);
+            margin-bottom: var(--space-md);
+        }
+
+        /* ============================================================
+           ABOUT
+        ============================================================ */
+        .about-text {
+            color: #e0e0e0;
+            max-width: 56ch;
+        }
+
+        /* ============================================================
+           STACK — 2-col card grid
+        ============================================================ */
+        .stack-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: var(--space-sm);
+        }
+
+        .stack-card {
+            padding: var(--space-md);
+            background: #050505;
+            border: 1px solid #161616;
+        }
+
+        .stack-card-label {
+            font-family: var(--mono);
+            font-size: 0.65rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--muted);
+            margin-bottom: var(--space-xs);
+        }
+
+        .stack-card-items {
+            font-family: var(--mono);
+            font-size: 0.85rem;
+            color: #ffffff;
+            line-height: 1.8;
+        }
+
+        /* ============================================================
+           METROLOGY — Feature list style
+        ============================================================ */
+        .feature-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .feature-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            font-family: var(--mono);
+            font-size: 0.85rem;
+            color: #e0e0e0;
+            padding: var(--space-sm) var(--space-md);
+            background: #050505;
+            border: 1px solid #161616;
+        }
+
+        .feature-list li::before {
+            content: '▸';
+            color: var(--accent);
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .feature-list li strong {
+            color: #ffffff;
+            font-weight: 600;
+        }
+
+        /* ============================================================
+           TOOLS — 3-col card grid
+        ============================================================ */
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: var(--space-sm);
+        }
+
+        .tool-card {
+            padding: var(--space-md);
+            background: #050505;
+            border: 1px solid #161616;
+            transition: border-color 0.2s;
+        }
+
+        .tool-card:hover {
+            border-color: var(--accent);
+        }
+
+        .tool-card-name {
+            font-family: var(--sans);
+            font-size: 1rem;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 4px;
+            transition: color 0.2s;
+        }
+
+        .tool-card:hover .tool-card-name {
+            color: var(--accent);
+        }
+
+        .tool-card-desc {
+            font-family: var(--mono);
+            font-size: 0.78rem;
+            color: #aaaaaa;
+        }
+
+        /* ============================================================
+           PROJECTS — Dynamic grid
+        ============================================================ */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: var(--space-sm);
+        }
+
+        .project-card {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: var(--space-md);
+            background: #050505;
+            border: 1px solid #161616;
+            transition: background 0.15s, border-color 0.15s;
+            cursor: pointer;
+        }
+
+        .project-card:hover {
+            background: #0a0a0a;
+            border-color: #333333;
+        }
+
+        .project-card:hover .project-title {
+            color: var(--accent);
+        }
+
+        .project-top {
+            margin-bottom: var(--space-sm);
+        }
+
+        .project-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 10px;
+        }
+
+        .project-title {
+            font-family: var(--sans);
+            font-size: 1rem;
+            font-weight: 700;
+            color: #ffffff;
+            transition: color 0.15s;
+        }
+
+        .project-lang {
+            font-family: var(--mono);
+            font-size: 0.65rem;
+            color: var(--muted);
+        }
+
+        .project-desc {
+            font-size: 0.88rem;
+            color: #e0e0e0;
+            line-height: 1.7;
+        }
+
+        .project-footer {
+            margin-top: var(--space-sm);
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-family: var(--mono);
+            font-size: 0.65rem;
+            color: var(--dim);
+            transition: color 0.15s;
+        }
+
+        .project-card:hover .project-footer {
+            color: var(--accent);
+        }
+
+        /* ============================================================
+           FOOTER
+        ============================================================ */
+        .page-footer {
+            margin-top: var(--space-xl);
+            padding-top: var(--space-md);
+            border-top: 1px solid var(--rule);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer-copy {
+            font-size: 0.72rem;
+            color: var(--muted);
+        }
+
+        .footer-uptime {
+            font-family: var(--mono);
+            font-size: 0.68rem;
+            color: var(--dim);
+        }
+
+        .footer-uptime span {
+            color: var(--muted);
+        }
+
+        /* ============================================================
+           RESPONSIVE — Mobile (single column)
+        ============================================================ */
+        @media (max-width: 820px) {
+            .root-grid {
+                grid-template-columns: 1fr;
+                padding: 0 24px;
+            }
+
+            .sidebar {
+                position: static;
+                height: auto;
+                border-right: none;
+                border-bottom: 1px solid var(--rule);
+                padding: var(--space-md) 0;
+                padding-right: 0;
+            }
+
+            .logo {
+                margin-bottom: var(--space-md);
+            }
+
+            .content {
+                padding: var(--space-md) 0;
+                gap: var(--space-lg);
+            }
+
+            .stack-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .tools-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .section-title {
+                font-size: 1.3rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .contact-val {
+                font-size: 0.72rem;
+            }
+
+            .project-card {
+                padding: var(--space-sm);
+            }
+
+            .stack-card {
+                padding: var(--space-sm);
+            }
+
+            .tool-card {
+                padding: var(--space-sm);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="root-grid">
+
+    <!-- ============================================================
+         SIDEBAR
+    ============================================================ -->
+    <aside class="sidebar">
+        <div>
+            <!-- Brand -->
+            <div class="logo">d<span class="accent">7</span>main</div>
+
+            <!-- Profile -->
+            <div class="profile-name">Demian Zaiats</div>
+            <div class="profile-meta" id="profile-meta">
+                Mechatronics Student<br>FM TUL — Liberec, Czechia
+            </div>
+
+            <!-- Nav -->
+            <ul class="sidebar-nav">
+                <li><a href="#about"      class="nav-link active" id="nav-about">About</a></li>
+                <li><a href="#stack"      class="nav-link"        id="nav-stack">Stack</a></li>
+                <li><a href="#metrology"  class="nav-link"        id="nav-metrology">Metrology</a></li>
+                <li><a href="#tools"      class="nav-link"        id="nav-tools">Tools</a></li>
+                <li><a href="#projects"   class="nav-link"        id="nav-projects">Projects</a></li>
+            </ul>
+
+            <!-- Contacts -->
+            <div class="sidebar-contacts">
+                <div class="contact-item">
+                    <span class="contact-label">Email</span>
+                    <a class="contact-val" href="mailto:demianzaiats@gmail.com">demianzaiats@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-label" id="lbl-academic">Academic</span>
+                    <a class="contact-val" href="mailto:demian.zaiats@tul.cz">demian.zaiats@tul.cz</a>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-label">GitHub</span>
+                    <a class="contact-val" href="https://github.com/d7main" target="_blank" rel="noopener">github.com/d7main</a>
+                </div>
+            </div>
+
+            <!-- Language switcher -->
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="en" onclick="setLang('en')">EN</button>
+                <span class="lang-sep">/</span>
+                <button class="lang-btn"        data-lang="uk" onclick="setLang('uk')">UK</button>
+                <span class="lang-sep">/</span>
+                <button class="lang-btn"        data-lang="cs" onclick="setLang('cs')">CS</button>
+            </div>
+        </div>
+
+        <!-- Uptime ticker -->
+        <div class="uptime">
+            sys.uptime — <span class="uptime-value" id="uptime-clock">00:00:00</span>
+        </div>
+    </aside>
+
+    <!-- ============================================================
+         MAIN CONTENT
+    ============================================================ -->
+    <main class="content">
+
+        <!-- About -->
+        <section id="about" class="section">
+            <div class="section-eyebrow">01 — Profile</div>
+            <h1 class="section-title" id="s-about-title">About</h1>
+            <div class="section-divider"></div>
+            <p class="about-text" id="s-about-body">
+                Mechatronics student at the Faculty of Mechatronics, Informatics and Interdisciplinary Studies, Technical University of Liberec (FM TUL). I design systems that connect hardware firmware with desktop software — embedded controllers, industrial PLCs, and .NET desktop utilities.
+            </p>
+        </section>
+
+        <!-- Stack -->
+        <section id="stack" class="section">
+            <div class="section-eyebrow">02 — Technical</div>
+            <h2 class="section-title" id="s-stack-title">Stack</h2>
+            <div class="section-divider"></div>
+            <div class="stack-grid">
+
+                <div class="stack-card">
+                    <div class="stack-card-label" id="lbl-embedded">Embedded / Firmware</div>
+                    <div class="stack-card-items">
+                        STM32<br>
+                        ESP32<br>
+                        C<br>
+                        C++
+                    </div>
+                </div>
+
+                <div class="stack-card">
+                    <div class="stack-card-label" id="lbl-automation">Automation / PLC</div>
+                    <div class="stack-card-items">
+                        B&R Automation Studio<br>
+                        Structured Text (ST)
+                    </div>
+                </div>
+
+                <div class="stack-card">
+                    <div class="stack-card-label" id="lbl-tools">FPGA & Tools</div>
+                    <div class="stack-card-items">
+                        Intel Quartus<br>
+                        Git<br>
+                        GitHub
+                    </div>
+                </div>
+
+                <div class="stack-card">
+                    <div class="stack-card-label" id="lbl-software">Software</div>
+                    <div class="stack-card-items">
+                        C# / .NET<br>
+                        WPF<br>
+                        WinForms
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Metrology -->
+        <section id="metrology" class="section">
+            <div class="section-eyebrow">03 — Metrology</div>
+            <h2 class="section-title" id="s-metro-title">Automation & Metrology</h2>
+            <div class="section-divider"></div>
+            <ul class="feature-list">
+                <li id="metro-rtd"><strong>RTD Sensors</strong> — Pt100, Pt500, Pt1000</li>
+                <li id="metro-gauge"><strong>Strain Gauges</strong> — Bridge configurations, differential measurements</li>
+                <li id="metro-signal"><strong>Industrial Signal Conditioning</strong> — 4–20 mA current loops, hardware filters</li>
+            </ul>
+        </section>
+
+        <!-- Tools -->
+        <section id="tools" class="section">
+            <div class="section-eyebrow" id="eyebrow-tools">04 — Tools</div>
+            <h2 class="section-title" id="s-tools-title">Tools</h2>
+            <div class="section-divider"></div>
+            <div class="tools-grid">
+                <div class="tool-card">
+                    <div class="tool-card-name">GitHub</div>
+                    <div class="tool-card-desc" id="tool-github">Version Control</div>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-card-name">Visual Studio</div>
+                    <div class="tool-card-desc" id="tool-vs">.NET IDE</div>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-card-name">VS Code</div>
+                    <div class="tool-card-desc" id="tool-vscode">Editor</div>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-card-name">Cursor</div>
+                    <div class="tool-card-desc" id="tool-cursor">AI-powered development</div>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-card-name">Arduino IDE</div>
+                    <div class="tool-card-desc" id="tool-arduino">Embedded</div>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-card-name">ESP-IDF</div>
+                    <div class="tool-card-desc" id="tool-espidf">Embedded</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects" class="section">
+            <div class="section-eyebrow">05 — Work</div>
+            <h2 class="section-title" id="s-proj-title">Projects</h2>
+            <div class="section-divider"></div>
+            <div class="projects-grid" id="projectsContainer">
+                <!-- Rendered by JS -->
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="page-footer">
+            <span class="footer-copy">© 2026 Demian Zaiats</span>
+            <span class="footer-uptime" id="footer-uptime">uptime — <span id="uptime-footer">00:00:00</span></span>
+        </footer>
+
+    </main>
+</div>
+
+<!-- ============================================================
+     JAVASCRIPT — Data, i18n, Render, Spy, Uptime
+============================================================ -->
+<script>
+    /* ----------------------------------------------------------
+       PROJECTS DATA
+       Add new entries here — cards render automatically.
+    ---------------------------------------------------------- */
+    const projectsData = [
+        {
+            title: 'COM_fix',
+            lang: 'C#',
+            link: 'https://github.com/d7main/COM_fix',
+            desc: {
+                en: 'Lightweight hardware recovery utility to scan, unblock, and repair stuck COM ports and drivers for STM32 / ESP32 developers.',
+                uk: 'Утиліта для сканування, розблокування та відновлення завислих COM-портів і драйверів для розробників STM32 та ESP32.',
+                cs: 'Nástroj pro skenování, odblokování a opravu zaseknutých portů COM a ovladačů pro vývojáře STM32 a ESP32.'
+            }
+        },
+        {
+            title: 'vibec-lang',
+            lang: 'TypeScript',
+            link: 'https://github.com/d7main/vibec-lang',
+            desc: {
+                en: 'LLM-powered DSL and VS Code extension that transpiles natural language specifications into clean C code.',
+                uk: 'DSL на базі LLM та розширення VS Code для транспіляції специфікацій природною мовою у чистий код на C.',
+                cs: 'DSL využívající LLM a rozšíření pro VS Code pro transpilaci přirozeno-jazykových specifikací do čistého C.'
+            }
+        },
+        {
+            title: 'High-Noon-Duel',
+            lang: 'C',
+            link: 'https://github.com/d7main/High-Noon-Duel',
+            desc: {
+                en: 'Arcade-style western duel game (1985 aesthetic) written in pure C using Win32 API / GDI.',
+                uk: 'Аркадна гра-дуель в стилі 1985 року, написана на чистому C з використанням Win32 API / GDI.',
+                cs: 'Arkádová western hra (estetika 1985) napsaná v čistém C pomocí Win32 API / GDI.'
+            }
+        }
+    ];
+
+    /* ----------------------------------------------------------
+       i18n DICTIONARY
+    ---------------------------------------------------------- */
+    const i18n = {
+        en: {
+            profileMeta:   'Mechatronics Student<br>FM TUL — Liberec, Czechia',
+            lblAcademic:   'Academic',
+            navAbout:      'About',
+            navStack:      'Stack',
+            navMetrology:  'Metrology',
+            navProjects:   'Projects',
+            sAboutTitle:   'About',
+            sAboutBody:    'Mechatronics student at the Faculty of Mechatronics, Informatics and Interdisciplinary Studies, Technical University of Liberec (FM TUL). I design systems that connect hardware firmware with desktop software — embedded controllers, industrial PLCs, and .NET desktop utilities.',
+            sStackTitle:   'Stack',
+            lblEmbedded:   'Embedded / Firmware',
+            lblAutomation: 'Automation / PLC',
+            lblTools:      'FPGA & Tools',
+            lblSoftware:   'Software',
+            sMetroTitle:   'Automation & Metrology',
+            metroRtd:      '<strong>RTD Sensors</strong> — Pt100, Pt500, Pt1000',
+            metroGauge:    '<strong>Strain Gauges</strong> — Bridge configurations, differential measurements',
+            metroSignal:   '<strong>Industrial Signal Conditioning</strong> — 4–20 mA current loops, hardware filters',
+            navTools:      'Tools',
+            sToolsTitle:   'Tools',
+            toolGithub:    'Version Control',
+            toolVs:        '.NET IDE',
+            toolVscode:    'Editor',
+            toolCursor:    'AI-powered development',
+            toolArduino:   'Embedded',
+            toolEspidf:    'Embedded',
+            sProjTitle:    'Projects',
+            projGithub:    'GitHub'
+        },
+        uk: {
+            profileMeta:   'Студент Мехатроніки<br>FM TUL — Ліберець, Чехія',
+            lblAcademic:   'Університет',
+            navAbout:      'Профіль',
+            navStack:      'Стек',
+            navMetrology:  'Метрологія',
+            navProjects:   'Проєкти',
+            sAboutTitle:   'Профіль',
+            sAboutBody:    'Студент мехатроніки Факультету мехатроніки, інформатики та міждисциплінарних досліджень Технічного університету в Ліберці (FM TUL). Проєктую системи, що поєднують мікропрограмне забезпечення з десктопним програмним забезпеченням — вбудовані контролери, промислові ПЛК та утиліти на .NET.',
+            sStackTitle:   'Стек',
+            lblEmbedded:   'Вбудовані / Мікропрограми',
+            lblAutomation: 'Автоматизація / ПЛК',
+            lblTools:      'FPGA та Інструменти',
+            lblSoftware:   'Програмне забезпечення',
+            sMetroTitle:   'Автоматизація та Метрологія',
+            metroRtd:      '<strong>Сенсори RTD</strong> — Pt100, Pt500, Pt1000',
+            metroGauge:    '<strong>Тензодатчики</strong> — Мостові конфігурації, диференціальні вимірювання',
+            metroSignal:   '<strong>Промислове кондиціювання сигналів</strong> — Токова петля 4–20 мА, апаратні фільтри',
+            navTools:      'Інструменти',
+            sToolsTitle:   'Інструменти',
+            toolGithub:    'Контроль версій',
+            toolVs:        '.NET IDE',
+            toolVscode:    'Редактор',
+            toolCursor:    'ШІ-середовище розробки',
+            toolArduino:   'Вбудовані системи',
+            toolEspidf:    'Вбудовані системи',
+            sProjTitle:    'Проєкти',
+            projGithub:    'GitHub'
+        },
+        cs: {
+            profileMeta:   'Student Mechatroniky<br>FM TUL — Liberec, Česko',
+            lblAcademic:   'Akademická',
+            navAbout:      'O mně',
+            navStack:      'Stack',
+            navMetrology:  'Metrologie',
+            navProjects:   'Projekty',
+            sAboutTitle:   'Profil',
+            sAboutBody:    'Student mechatroniky na Fakultě mechatroniky, informatiky a mezioborových studií Technické univerzity v Liberci (FM TUL). Navrhuji systémy propojující hardware firmware s desktopovým softwarem — vestavěné řídicí systémy, průmyslové PLC a .NET nástroje.',
+            sStackTitle:   'Stack',
+            lblEmbedded:   'Vestavěné / Firmware',
+            lblAutomation: 'Automatizace / PLC',
+            lblTools:      'FPGA a Nástroje',
+            lblSoftware:   'Software',
+            sMetroTitle:   'Automatizace a Metrologie',
+            metroRtd:      '<strong>RTD senzory</strong> — Pt100, Pt500, Pt1000',
+            metroGauge:    '<strong>Tenzometry</strong> — Můstkové konfigurace, diferenciální měření',
+            metroSignal:   '<strong>Průmyslová úprava signálů</strong> — Proudová smyčka 4–20 mA, hardwarové filtry',
+            navTools:      'Nástroje',
+            sToolsTitle:   'Nástroje',
+            toolGithub:    'Správa verzí',
+            toolVs:        '.NET IDE',
+            toolVscode:    'Editor',
+            toolCursor:    'AI-vývojové prostředí',
+            toolArduino:   'Vestavné systémy',
+            toolEspidf:    'Vestavné systémy',
+            sProjTitle:    'Projekty',
+            projGithub:    'GitHub'
+        }
+    };
+
+    let currentLang = 'en';
+
+    /* ----------------------------------------------------------
+       LANGUAGE SETTER
+    ---------------------------------------------------------- */
+    function setLang(lang) {
+        currentLang = lang;
+        const d = i18n[lang];
+
+        // Toggle active button
+        document.querySelectorAll('.lang-btn').forEach(btn => {
+            btn.classList.toggle('active', btn.dataset.lang === lang);
+        });
+
+        // Sidebar
+        document.getElementById('profile-meta').innerHTML  = d.profileMeta;
+        document.getElementById('lbl-academic').textContent = d.lblAcademic;
+        document.getElementById('nav-about').textContent    = d.navAbout;
+        document.getElementById('nav-stack').textContent    = d.navStack;
+        document.getElementById('nav-metrology').textContent = d.navMetrology;
+        document.getElementById('nav-projects').textContent = d.navProjects;
+
+        // About
+        document.getElementById('s-about-title').textContent = d.sAboutTitle;
+        document.getElementById('s-about-body').textContent  = d.sAboutBody;
+
+        // Stack
+        document.getElementById('s-stack-title').textContent  = d.sStackTitle;
+        document.getElementById('lbl-embedded').textContent   = d.lblEmbedded;
+        document.getElementById('lbl-automation').textContent = d.lblAutomation;
+        document.getElementById('lbl-tools').textContent      = d.lblTools;
+        document.getElementById('lbl-software').textContent   = d.lblSoftware;
+
+        // Metrology
+        document.getElementById('s-metro-title').textContent = d.sMetroTitle;
+        document.getElementById('metro-rtd').innerHTML       = d.metroRtd;
+        document.getElementById('metro-gauge').innerHTML     = d.metroGauge;
+        document.getElementById('metro-signal').innerHTML    = d.metroSignal;
+
+        // Tools
+        if (document.getElementById('nav-tools')) document.getElementById('nav-tools').textContent = d.navTools;
+        document.getElementById('s-tools-title').textContent  = d.sToolsTitle;
+        document.getElementById('tool-github').textContent    = d.toolGithub;
+        document.getElementById('tool-vs').textContent        = d.toolVs;
+        document.getElementById('tool-vscode').textContent    = d.toolVscode;
+        document.getElementById('tool-cursor').textContent    = d.toolCursor;
+        document.getElementById('tool-arduino').textContent   = d.toolArduino;
+        document.getElementById('tool-espidf').textContent    = d.toolEspidf;
+
+        // Projects heading + re-render cards
+        document.getElementById('s-proj-title').textContent = d.sProjTitle;
+        renderProjects(lang);
+    }
+
+    /* ----------------------------------------------------------
+       PROJECT CARD RENDERER
+    ---------------------------------------------------------- */
+    function renderProjects(lang) {
+        const container = document.getElementById('projectsContainer');
+        container.innerHTML = '';
+
+        projectsData.forEach(p => {
+            const desc = p.desc[lang] || p.desc.en;
+            const card = document.createElement('a');
+            card.href = p.link;
+            card.target = '_blank';
+            card.rel = 'noopener';
+            card.className = 'project-card';
+
+            card.innerHTML = `
+                <div class="project-top">
+                    <div class="project-header">
+                        <span class="project-title">${p.title}</span>
+                        <span class="project-lang">${p.lang}</span>
+                    </div>
+                    <p class="project-desc">${desc}</p>
+                </div>
+                <div class="project-footer">
+                    <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                    ${i18n[currentLang].projGithub}
+                </div>
+            `;
+            container.appendChild(card);
+        });
+    }
+
+    /* ----------------------------------------------------------
+       SECTION SPY
+    ---------------------------------------------------------- */
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    function updateSpy() {
+        const sections = ['about', 'stack', 'metrology', 'tools', 'projects'];
+        let active = 'about';
+
+        sections.forEach(id => {
+            const el = document.getElementById(id);
+            if (el && el.getBoundingClientRect().top <= 120) {
+                active = id;
+            }
+        });
+
+        navLinks.forEach(link => {
+            const href = link.getAttribute('href').replace('#', '');
+            link.classList.toggle('active', href === active);
+        });
+    }
+
+    window.addEventListener('scroll', updateSpy, { passive: true });
+
+    /* ----------------------------------------------------------
+       UPTIME COUNTER
+    ---------------------------------------------------------- */
+    let ticks = 7322; // Simulated boot offset
+
+    function formatUptime(s) {
+        const h = Math.floor(s / 3600).toString().padStart(2, '0');
+        const m = Math.floor((s % 3600) / 60).toString().padStart(2, '0');
+        const sec = (s % 60).toString().padStart(2, '0');
+        return `${h}:${m}:${sec}`;
+    }
+
+    setInterval(() => {
+        ticks++;
+        const t = formatUptime(ticks);
+        document.getElementById('uptime-clock').textContent = t;
+        document.getElementById('uptime-footer').textContent = t;
+    }, 1000);
+
+    /* ----------------------------------------------------------
+       INIT
+    ---------------------------------------------------------- */
+    setLang('en');
+    document.getElementById('uptime-clock').textContent = formatUptime(ticks);
+    document.getElementById('uptime-footer').textContent = formatUptime(ticks);
+</script>
+
+</body>
+</html>
