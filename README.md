@@ -7,15 +7,19 @@
 
 ---
 
+
+
 ### 🧑‍💻 About Me
 
-I'm a Mechatronics student from the **Czech Republic** 🇨🇿. I love building projects that connect software with real-world hardware.
+I'm a Mechatronics student from **Ukraine** 🇺🇦, currently living and studying in the **Czech Republic** 🇨🇿. I love building projects that connect low-level firmware with real-world hardware.
 
-- 🎓 **Education:** Studying Mechatronics.
-- 🖥️ **Software:** Building .NET desktop apps (C#, WPF, WinForms).
-- ⚙️ **Hardware:** Creating smart devices using ESP32, ESP8266 & Arduino.
-- 🔌 **Interests:** Automation, IoT, and hardware-software integration.
-- 🌱 **Currently learning:** Advanced C#, RTOS, PCB design, CAD/CAE.
+- 🎓 **Education:** Studying Mechatronics in the Czech Republic.
+- ⚙️ **Embedded & Hardware:** Building smart IoT devices, low-power nodes, and custom PCBs.
+- 🛠️ **Tech Stack:** C/C++, ESP-IDF, FreeRTOS, ESP32 / ESP32-C3.
+- 🖥️ **Desktop & Software:** Developing C# / .NET applications (WPF, WinForms).
+- 🔌 **Interests:** IoT, hardware-software integration, automation, and energy efficiency.
+- 🌱 **Currently learning:** Advanced ESP-IDF, RTOS internals, custom PCB design, and CAD/CAE.
+
 
 ---
 
