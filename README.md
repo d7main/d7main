@@ -1,97 +1,64 @@
 <h1 align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=30&duration=2800&pause=1000&color=36BCF7&center=true&vCenter=true&width=700&lines=d7main;Mechatronics+%26+Embedded+Systems;Hardware+%2B+Firmware+%2B+Software" alt="Typing SVG" />
+  <span>d</span><span style="color:#F97316;">7</span><span>main</span>
 </h1>
 
 <p align="center">
-  <a href="https://github.com/d7main">
-    <img src="https://img.shields.io/github/followers/d7main?style=flat-square&label=Followers" />
-  </a>
-  <img src="https://komarev.com/ghpvc/?username=d7main&label=Profile%20Views&color=36BCF7&style=flat-square" />
-</p>
-
-<br>
-
-<p align="center">
-  <strong>Mechatronics student from Ukraine 🇺🇦 · studying in the Czech Republic 🇨🇿</strong>
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=21&duration=2800&pause=1000&color=36BCF7&center=true&vCenter=true&width=700&lines=Mechatronics+Student;Embedded+Systems+%7C+IoT+%7C+PCB+Design;Hardware+%2B+Firmware+%2B+Software" alt="Typing SVG" />
 </p>
 
 <p align="center">
-  Designing and building systems where <b>electronics, firmware and software</b> come together.
+  <img src="https://komarev.com/ghpvc/?username=d7main&label=Profile%20Views&color=F97316&style=flat-square" alt="Profile Views" />
 </p>
-
-<br>
 
 ---
 
-## ⚡ Engineering Focus
+<h2 align="center">⚡ Hardware meets software</h2>
 
-<table align="center">
-<tr>
-<td align="center" width="33%">
+<p align="center">
+  Mechatronics student from <b>Ukraine 🇺🇦</b> · studying in the <b>Czech Republic 🇨🇿</b>
+</p>
 
-### 🧠 Embedded
-
-ESP32
-ESP-IDF
-FreeRTOS
-C / C++
-
-</td>
-
-<td align="center" width="33%">
-
-### 🔌 Hardware
-
-PCB Design
-KiCad
-Electronics
-IoT
-
-</td>
-
-<td align="center" width="33%">
-
-### 💻 Software
-
-C#
-.NET
-WPF
-MATLAB
-
-</td>
-</tr>
-</table>
+<p align="center">
+  Building embedded systems, custom electronics and software —
+  from <b>PCB design</b> and <b>firmware</b> to complete working prototypes.
+</p>
 
 ---
 
-## 🛠 Technology
+## 🧠 Embedded Systems
 
 <p align="center">
+  <img src="https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white" />
+  <img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white" />
+  <img src="https://img.shields.io/badge/ESP32-000000?style=for-the-badge&logo=espressif&logoColor=white" />
+  <img src="https://img.shields.io/badge/ESP--IDF-E7352C?style=for-the-badge&logo=espressif&logoColor=white" />
+  <img src="https://img.shields.io/badge/FreeRTOS-0D4A8B?style=for-the-badge&logo=freertos&logoColor=white" />
+  <img src="https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=arduino&logoColor=white" />
+</p>
 
-<img src="https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white" />
-<img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white" />
-<img src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white" />
+## 🔌 Electronics & PCB
 
-<br>
+<p align="center">
+  <img src="https://img.shields.io/badge/KiCad-314CB0?style=for-the-badge&logo=kicad&logoColor=white" />
+  <img src="https://img.shields.io/badge/PCB%20Design-222222?style=for-the-badge&logo=electron&logoColor=white" />
+  <img src="https://img.shields.io/badge/Fusion%20360-F05A28?style=for-the-badge&logo=autodesk&logoColor=white" />
+</p>
 
-<img src="https://img.shields.io/badge/ESP32-000000?style=for-the-badge&logo=espressif&logoColor=white" />
-<img src="https://img.shields.io/badge/ESP--IDF-E7352C?style=for-the-badge&logo=espressif&logoColor=white" />
-<img src="https://img.shields.io/badge/FreeRTOS-0D4A8B?style=for-the-badge&logo=freertos&logoColor=white" />
-<img src="https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=arduino&logoColor=white" />
+## 💻 Software Development
 
-<br>
+<p align="center">
+  <img src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white" />
+  <img src="https://img.shields.io/badge/.NET-512BD4?style=for-the-badge&logo=dotnet&logoColor=white" />
+  <img src="https://img.shields.io/badge/WPF-512BD4?style=for-the-badge&logo=windows&logoColor=white" />
+  <img src="https://img.shields.io/badge/WinForms-0078D6?style=for-the-badge&logo=windows&logoColor=white" />
+</p>
 
-<img src="https://img.shields.io/badge/KiCad-314CB0?style=for-the-badge&logo=kicad&logoColor=white" />
-<img src="https://img.shields.io/badge/Fusion%20360-F05A28?style=for-the-badge&logo=autodesk&logoColor=white" />
-<img src="https://img.shields.io/badge/PCB%20Design-222222?style=for-the-badge&logo=electron&logoColor=white" />
+## 🧪 Engineering & Tools
 
-<br>
-
-<img src="https://img.shields.io/badge/.NET-512BD4?style=for-the-badge&logo=dotnet&logoColor=white" />
-<img src="https://img.shields.io/badge/WPF-512BD4?style=for-the-badge&logo=windows&logoColor=white" />
-<img src="https://img.shields.io/badge/MATLAB-0076A8?style=for-the-badge&logo=mathworks&logoColor=white" />
-<img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
-
+<p align="center">
+  <img src="https://img.shields.io/badge/MATLAB-0076A8?style=for-the-badge&logo=mathworks&logoColor=white" />
+  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
+  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
 </p>
 
 ---
@@ -124,9 +91,9 @@ MATLAB
 
 <p align="center">
   <code>Hardware</code>
-  →
+  <b>→</b>
   <code>Firmware</code>
-  →
+  <b>→</b>
   <code>Software</code>
 </p>
 
