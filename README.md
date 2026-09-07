@@ -59,8 +59,7 @@ Building embedded systems, custom electronics and software — from **PCB design
   <img src="https://img.shields.io/badge/.NET-512BD4?style=for-the-badge&logo=dotnet&logoColor=white">
   <img src="https://img.shields.io/badge/WPF-512BD4?style=for-the-badge">
   <img src="https://img.shields.io/badge/WinForms-512BD4?style=for-the-badge">
-  <img src="https://img.shields.io/badge/MATLAB-0076A8?style=for-the-badge&logo=mathworks&logoColor=white">
-</p>
+  
 
 **Focus:** Desktop applications, hardware utilities, serial communication, system tools and hardware/software integration.
 
@@ -73,12 +72,14 @@ Building embedded systems, custom electronics and software — from **PCB design
   <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white">
   <img src="https://img.shields.io/badge/PlatformIO-F5822A?style=for-the-badge&logo=platformio&logoColor=white">
 </p>
+  <img src="https://img.shields.io/badge/MATLAB-0076A8?style=for-the-badge&logo=mathworks&logoColor=white">
+</p>
 
 ---
 
 ## 🚀 Selected Projects
 
-### 🌱 ESP32 Environmental Node
+###  ESP32 Environmental Node
 
 **Low-power IoT environmental monitoring system built with native ESP-IDF.**
 
