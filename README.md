@@ -82,7 +82,7 @@ Building embedded systems, custom electronics and software — from **PCB design
 ###  ESP32 Environmental Node
 
 **Low-power IoT environmental monitoring system built with native ESP-IDF.**
-
+<source media="(prefers-color-scheme: dark)" srcset="./ENV.svg">
 - ESP32-C3 + ESP-IDF 5.x
 - FreeRTOS
 - Deep Sleep / RTC wake-up
