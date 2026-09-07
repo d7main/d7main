@@ -1,60 +1,49 @@
-<h1 align="center">Hi there, I'm d7main 👋</h1>
-<h3 align="center">Mechatronics Student | .NET & IoT Developer</h3>
+# DEMIAN ZAIATS
 
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=d7main&label=Profile%20views&color=0e75b6&style=flat" alt="Profile Views" />
-</p>
-
----
-
-
-
-### 🧑‍💻 About Me
-
-I'm a Mechatronics student from **Ukraine** 🇺🇦, currently living and studying in the **Czech Republic** 🇨🇿. I love building projects that connect low-level firmware with real-world hardware.
-
-- 🎓 **Education:** Studying Mechatronics in the Czech Republic.
-- ⚙️ **Embedded & Hardware:** Building smart IoT devices, low-power nodes, and custom PCBs.
-- 🛠️ **Tech Stack:** C/C++, ESP-IDF, FreeRTOS, ESP32 / ESP32-C3.
-- 🖥️ **Desktop & Software:** Developing C# / .NET applications (WPF, WinForms).
-- 🔌 **Interests:** IoT, hardware-software integration, automation, and energy efficiency.
-- 🌱 **Currently learning:** Advanced ESP-IDF, RTOS internals, custom PCB design, and CAD/CAE.
-
+```
+[SYSTEM INFO]
+Status:        Mechatronics & Embedded Systems Student @ TUL
+Location:      Liberec / Mladá Boleslav, CZ
+Focus:         Embedded Systems, Low-Power Hardware, System Software
+Contact:       github.com/d7main
+```
 
 ---
 
-### 🛠 Tech Stack
+### TECHNICAL SPECIFICATION
 
-**Programming Languages**
+```
+Hardware & EDA          │ KiCad, EasyEDA, 2/4-Layer PCB Design, SMT Assembly (0603/SOT-23)
+Embedded & RTOS         │ ESP-IDF, FreeRTOS, ESP32 / S3 / C3, STM32, Bare-metal C/C++
+Industrial & Automation │ B&R Automation Studio, Structured Text (IEC 61131-3), MATLAB
+Software & Systems      │ C# (.NET / WPF / WinForms), Win32 API, Python, C++17
+CAD / CAE               │ Autodesk Fusion 360 (Enclosure Design, Mechanical Modeling)
+Toolchain               │ Git, CMake, GCC, PlatformIO, VS Code, Visual Studio
+```
+
+---
+
+### ARCHITECTURE & COMPETENCIES
+
+* **Embedded Firmware Development**
+  * Asynchronous task management and synchronization via FreeRTOS internals.
+  * Deep-sleep power management and sensor interface drivers (I2C, SPI, UART, ADC).
+  * Direct low-level register configuration and peripheral control.
+
+* **Hardware Engineering & EDA**
+  * Custom PCB schematic design and multi-layer layout in KiCad/EasyEDA.
+  * Impedance control, power plane optimization, and RF module implementation.
+  * Hands-on SMT prototyping, rework, and thermal profile management.
+
+* **Software & Industrial Systems**
+  * Native Windows utilities and hardware communication tooling (C# / Win32).
+  * Industrial PLC control logic implementation (IEC 61131-3 ST).
+
+---
+
+### METRICS
+
 <p align="left">
-  <img src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white" alt="C#" />
-  <img src="https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white" alt="C" />
-  <img src="https://img.shields.io/badge/MATLAB-0076A8?style=for-the-badge&logo=mathworks&logoColor=white" alt="MATLAB" />
-</p>
-
-**Desktop Development**
-<p align="left">
- <img src="https://img.shields.io/badge/.NET-512BD4?style=for-the-badge&logo=dotnet&logoColor=white" alt=".NET" />
- <img src="https://img.shields.io/badge/WPF-512BD4?style=for-the-badge&logo=windows&logoColor=white" alt="WPF" />
- <img src="https://img.shields.io/badge/WinForms-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="WinForms" />
-</p>
-
-**Embedded / IoT**
-<p align="left">
-  <img src="https://img.shields.io/badge/ESP32-000000?style=for-the-badge&logo=espressif&logoColor=white" alt="ESP32" />
-  <img src="https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=arduino&logoColor=white" alt="Arduino" />
-  <img src="https://img.shields.io/badge/Fusion_360-F05A28?style=for-the-badge&logo=autodesk&logoColor=white" alt="Fusion 360" />
-</p>
-
----
-
-### 📊 Coding Activity
-
----
-
-### 📈 GitHub Stats
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=d7main&show_icons=true&theme=radical&hide_border=true&count_private=true" alt="GitHub Stats" height="170" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=d7main&layout=compact&theme=radical&hide_border=true" alt="Top Langs" height="170" />
+  <img src="https://github-readme-stats.vercel.app/api?username=d7main&show_icons=false&theme=graywhite&hide_border=true&count_private=true" height="130" alt="Metrics" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=d7main&layout=compact&theme=graywhite&hide_border=true&hide=html,css,tex" height="130" alt="Languages" />
 </p>
