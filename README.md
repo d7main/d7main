@@ -17,7 +17,7 @@
 
 ---
 
-## ⚡ Hardware meets software
+##  Hardware meets software
 
 Mechatronics student from Ukraine 🇺🇦 · studying in Czech Republic 🇨🇿
 
@@ -25,7 +25,7 @@ Building embedded systems, custom electronics and software — from **PCB design
 
 ---
 
-## 🧠 Embedded Systems
+##  Embedded Systems
 
 <p>
   <img src="https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white">
@@ -52,7 +52,7 @@ Building embedded systems, custom electronics and software — from **PCB design
 
 ---
 
-## 💻 Software Development
+##  Software Development
 
 <p>
   <img src="https://img.shields.io/badge/C%23-512BD4?style=for-the-badge&logo=csharp&logoColor=white">
@@ -65,7 +65,7 @@ Building embedded systems, custom electronics and software — from **PCB design
 
 ---
 
-## 🧪 Engineering Tools
+##  Engineering Tools
 
 <p>
   <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white">
@@ -77,7 +77,7 @@ Building embedded systems, custom electronics and software — from **PCB design
 
 ---
 
-## 🚀 Selected Projects
+##  Selected Projects
 
 ###  ESP32 Environmental Node
 <p align="center">
@@ -101,7 +101,7 @@ Building embedded systems, custom electronics and software — from **PCB design
 
 ---
 
-### 🛠️ COM_fix
+###  COM_fix
 
 **Windows hardware recovery utility for embedded developers.**
 
