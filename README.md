@@ -40,7 +40,7 @@ Building embedded systems, custom electronics and software — from **PCB design
 
 ---
 
-## 🔌 Electronics & PCB
+##  Electronics & PCB
 
 <p>
   <img src="https://img.shields.io/badge/KiCad-314CB0?style=for-the-badge&logo=kicad&logoColor=white">
