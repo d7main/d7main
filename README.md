@@ -81,7 +81,8 @@ Building embedded systems, custom electronics and software — from **PCB design
 
 ###  ESP32 Environmental Node
 <p align="center">
-  <img src="ENV.svg" alt="ENV Logo" width="250" />
+ <img width="521" height="522" alt="Snímek obrazovky 2026-10-30 112400" src="https://github.com/user-attachments/assets/f9c44062-a8ec-4166-b3b7-8bbc1183ba60" />
+
 </p>
 
 **Low-power IoT environmental monitoring system built with native ESP-IDF.**
