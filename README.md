@@ -97,7 +97,7 @@ Building embedded systems, custom electronics and software — from **PCB design
 - PlatformIO-based development
 
 <a href="https://github.com/d7main/ESP32_EnvironmentalNode">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=d7main&repo=ESP32_EnvironmentalNode&theme=radical&hide_border=true" />
+  
 </a>
 
 ---
